@@ -86,7 +86,6 @@ public void draw()
   space[i].setPointDirection(-180);
   space[i].setSpeedX(-3);
   }
-   
   }
   if(key == 'd'){
   for(int i = 0; i < space.length; i++){
@@ -122,5 +121,5 @@ public void draw()
   }
   }//key controls
   }//end draw()
-
 }
+
