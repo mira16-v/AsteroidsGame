@@ -113,8 +113,8 @@ public void draw()
   }
   }
   if(key == 'h'){
-  x = (int)(Math.random()*500);
-  y = (int)(Math.random()*500);
+  int x = (int)(Math.random()*500);
+  int y = (int)(Math.random()*500);
   for(int i = 0; i < space.length; i++){
   space[i].setCenterX(x);
   space[i].setCenterY(y);
