@@ -7,7 +7,7 @@ public void setup()
   size(500, 500);
   background(0);
   
-  for(int i = 0; i < 10; i++){
+  for(int i = 0; i < 30; i++){
     debris.add(new Asteroid());
   } //initializing asteroids
 
