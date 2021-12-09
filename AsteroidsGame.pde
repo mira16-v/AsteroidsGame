@@ -73,7 +73,7 @@ public void draw()
   
   for(int i = 0; i < bob.length; i++){
   bob[i].show();
-  } showing stars
+  } //showing stars
 
  for(int i = 0; i < space.length; i++){
         space[i].show();
