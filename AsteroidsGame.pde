@@ -1,8 +1,6 @@
-ArrayList <Asteroid> debris = new ArrayList <Asteroid>();
-
-//Asteroid [] sue;
-Star [] bob;
-Spaceship [] space;
+ArrayList <Asteroid> debris = new ArrayList <Asteroid>(); //asteroid arraylist 
+Star [] bob; // star background
+Spaceship [] space; //spaceship fleet array
 public void setup()
 {
   //frameRate(5);
@@ -11,16 +9,14 @@ public void setup()
   
   for(int i = 0; i < 10; i++){
     debris.add(new Asteroid());
-  }
-  //sue = new Asteroid[10];
-  //for(int i =0; i < 10; i++){
-  //sue[i] = new Asteroid();
-  //}
+  } //initializing asteroids
+
   space = new Spaceship[6];
   for(int i = 0; i < 6; i++){
   space[i] = new Spaceship();
-  }
-    for(int i = 0; i < space.length; i++){
+  } //initializing spaceship fleet
+  
+  for(int i = 0; i < space.length; i++){
     if(i/1 == 1){
       space[i].setCenterX(250);
       space[i].setCenterY(230);
@@ -46,14 +42,14 @@ public void setup()
       space[i].setCenterY(280);
       space[i].move();
     }
-    
-  }
+  } //positioning and moving fleet ships
   
   bob = new Star[1000];
   for(int i = 0; i < 1000; i++){
   bob[i] = new Star();
-  }
-}
+  }//initializing background
+}// end setup
+
 public void draw()
 {
   background(0);
@@ -62,19 +58,8 @@ public void draw()
     Asteroid rock = debris.get(i);
     rock.move();
     rock.show();
-  }
+  } //moving asteroids
     
-  //for(int i = 0; i < debris.size(); i++){
-  //  debris.get(i).show();
-  //  debris.get(i).move();
-  //    for(int y = 0; y < space.length; y++){
-  //      float d = dist((float)space[y].getX(), (float)space[y].getY(), (float)debris.get(i).getX(), (float)debris.get(i).getY());
-  //      if(d < 10){
-  //        debris.remove(i);
-  //      }
-  //    }
-      
-  //}
   for(int y = 0; y < space.length; y++){
     for(int i = 0; i < debris.size(); i++){
       debris.get(i).show();
@@ -84,19 +69,16 @@ public void draw()
           debris.remove(i);
         }
     }
-  }
+  } //collision
   
-
-
- 
   for(int i = 0; i < bob.length; i++){
   bob[i].show();
-  }
+  } showing stars
 
  for(int i = 0; i < space.length; i++){
         space[i].show();
       space[i].move();
- }
+ }//showing/moving fleet
  
   if(keyPressed){
   if(key == 'a'){
@@ -138,10 +120,7 @@ public void draw()
   space[i].setSpeedX(0);
   space[i].setSpeedY(0);
   }
-  }
-  }
-  
-
-  
+  }//key controls
+  }//end draw()
 
 }
