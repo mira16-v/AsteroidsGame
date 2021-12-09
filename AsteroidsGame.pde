@@ -113,9 +113,11 @@ public void draw()
   }
   }
   if(key == 'h'){
+  x = (int)(Math.random()*500);
+  y = (int)(Math.random()*500);
   for(int i = 0; i < space.length; i++){
-  space[i].setCenterX((int)(Math.random()*500));
-  space[i].setCenterY((int)(Math.random()*500));
+  space[i].setCenterX(x);
+  space[i].setCenterY(y);
   space[i].setSpeedX(0);
   space[i].setSpeedY(0);
   }
