@@ -117,32 +117,32 @@ public void draw()
   int x = (int)(Math.random()*500);
   int y = (int)(Math.random()*500);
   for(int i = 0; i < space.length; i++){
-    if(i/1 == 1){
+    if(i == 0){
       space[i].setCenterX(x+30);
       space[i].setCenterY(y-20);
       space[i].setSpeedX(0);
       space[i].setSpeedY(0);
-    } else if(i/1 == 2){
+    } else if(i == 1){
       space[i].setCenterX(x-30);
       space[i].setCenterY(y-20);
       space[i].setSpeedX(0);
       space[i].setSpeedY(0);
-    }else if(i/1 == 3){
+    }else if(i == 2){
       space[i].setCenterX(x-60);
       space[i].setCenterY(y);
       space[i].setSpeedX(0);
       space[i].setSpeedY(0);
-    } else if(i/1 == 4){
+    } else if(i == 3){
       space[i].setCenterX(x);
       space[i].setCenterY(y);
       space[i].setSpeedX(0);
       space[i].setSpeedY(0);
-    }else if(i/1 == 5){
+    }else if(i == 4){
       space[i].setCenterX(x-60);
       space[i].setCenterY(y+30);
       space[i].setSpeedX(0);
       space[i].setSpeedY(0);
-    }else if(i/1 == 6){
+    }else if(i == 5){
       space[i].setCenterX(x-60);
       space[i].setCenterY(y-30);
       space[i].setSpeedX(0);
@@ -152,4 +152,3 @@ public void draw()
   }//key controls
   }//end draw()
 }
-
